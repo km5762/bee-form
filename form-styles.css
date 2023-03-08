@@ -46,3 +46,123 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+@font-face {
+    font-family: HoneycombHappiness;
+    src: url(HoneycombHappiness.ttf);
+}
+
+:root {
+	font-family: 'Inter', sans-serif;
+}
+
+body {
+	display: flex;
+}
+
+.left-hero {
+	position: relative;
+	background: url(bee-splash.jpg);
+	height: 100vh;
+	width: 40vw;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.citation {
+	margin-bottom: 10px;
+	font-weight: 100;
+	color: aliceblue;
+}
+
+.citation a:link {
+	color: aliceblue;
+}
+
+.citation a:visited {
+	color: aliceblue;
+}
+
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.753);
+	height: 15vh;
+	width: 100%;
+	margin-top: 30vh;
+}
+
+.banner h1 {
+	color: #fdb81e;
+	font-size: 5vw;
+	font-family: HoneycombHappiness;
+}
+
+.banner .logo {
+	width: 5vw;
+	height: 5vw;
+	margin-right: 40px;
+	border-radius: 100%;
+}
+
+.form-container {
+	height: 100vh;
+	width: 60vw;
+	background-color: rgb(240, 240, 240);
+	display: flex;	
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-container p {
+	margin-left: 3vw;
+}
+
+.form-container p, .form-container h1 {
+	color: rgb(100, 100, 100);
+	font-weight: 900;
+	font-size: 2rem;
+	line-height: 3rem;
+}
+
+form {
+	padding-top: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 3vw;
+	background-color: rgb(255, 255, 255);
+	margin-top: 20vh;
+	box-shadow: 0px 5px 5px rgb(0 0 0 / 12%);
+}
+
+.form-content {
+	display: flex;
+	gap: 10vw;
+}
+
+form li {
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	width: 100%;
+}
+
+.form-content input {
+	width: 13vw;
+	height: 20px;
+}
+
+label {
+	font-size: 15px;
+	color: rgb(100, 100, 100);
+	margin-bottom: 10px;
+}
+
+input, label {
+    display:block;
+}
+
+em {font-style: italic; color: #fdb81e;}
