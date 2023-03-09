@@ -156,7 +156,6 @@ form li {
 	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
-	color: #cccccc;
 }
 
 .form-content input:invalid {
@@ -193,6 +192,10 @@ input, label {
 	font-size: 2vw;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+#confirm-password-stauts {
+
 }
 
 em {font-style: italic; color: #fdb81e;}

@@ -20,7 +20,7 @@
     </div>
     <div class="form-container">
         <p>Thank you for choosing Bee Facts!<br> To learn more Bee Facts, sign up for our mailing list today!<br><br> You <em>know</em> you want to.</p>
-        <form>
+        <form onsubmit="checkPassword();">
             <h1>Let's do this!</h1>
             <section class="form-content">
                 <ul>
@@ -53,6 +53,7 @@
                     <li>
                         <label for="confirm-password-input">CONFIRM PASSWORD</label>
                         <input type="password" name="confirm-password" id="confirm-password-input">
+                        <p id="confirm-password-status"></p>
                     </li>
                 </ul>
             </section>
