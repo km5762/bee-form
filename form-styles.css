@@ -69,11 +69,14 @@ body {
 	background-position: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 }
 
 .citation {
+	position: absolute;
+	left: 20px;
+	bottom: 0px;
 	margin-bottom: 10px;
 	font-weight: 100;
 	color: aliceblue;
@@ -94,7 +97,6 @@ body {
 	background-color: rgba(0, 0, 0, 0.753);
 	height: 15vh;
 	width: 100%;
-	margin-top: 30vh;
 }
 
 .banner h1 {
@@ -167,8 +169,6 @@ form.submitted input:invalid{
 	border-color: #00b7ff;
 }
 
-.form-content
-
 label {
 	font-size: 15px;
 	color: rgb(100, 100, 100);
@@ -199,3 +199,53 @@ span[aria-label='required'] {
 }
 
 em {font-style: italic; color: #fdb81e;}
+
+@media only screen and (max-width: 700px) {
+	body {
+		flex-direction: column;
+	}
+
+	.left-hero {
+		width: 100vw;
+		height: 200px;
+	}
+
+	.citation {
+		font-size: 10px;
+	}
+
+	.banner h1 {
+		font-size: 40px;
+	}
+
+	.banner .logo {
+		width: 40px;
+		height: 40px;
+	}
+
+	.form-container {
+		height: 80vh;
+		width: 100vw;
+		display: block;
+	}
+
+	.form-container p {
+		font-size: 20px;
+		line-height: 2rem;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	form {
+		margin-top: 0px;
+	}
+
+	#submit-button {
+		font-size: 20px;
+		width: 130px;
+	}
+
+	.form-content input {
+		width: 30vw;
+	}
+  }
